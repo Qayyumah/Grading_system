@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1 class="head" style="color: lightblue; text-align: center; font-weight: 600; font-size: 35px;">Student Grading System</h1>
+    <div class="container">
+        <div class="content">
+            <nav class="side-bar">
+                <div class="name">
+                    <label for="text">
+                        Student's Name:
+                    </label>
+                    <input type="text" id="fullname" style="text-align: center;">
+                </div>
+                <div class="side-nav">
+                    <div class="side-nav_item side-nav_item--active">
+                        <button onclick="total()" id="total-button">Total</button>
+                    </div>
+                    <div class="side-nav_item">
+                        <button onclick="average()" id="avg-button">Average</button>
+                    </div>
+                    <div class="side-nav_item">
+                        <button onclick="grade()" id="grade-button">Grade</button>
+                    </div>
+                    <div class="side-nav_item">
+                        <button onclick="comment()" id="comment-button">Comment</button>
+                    </div>
+                </div>
+            </nav>
+
+            <br>
+
+            <table class="table">
+                <tr>
+                    <td class="top">Subjects</td>
+                    <td class="top">Test 1</td>
+                    <td class="top">Test 2</td>
+                    <td class="top">Exam</td>
+                    <td class="top">Total</td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="s">Mathematics</td>
+                    <td><input type="text" id="number1" class="np"></td>
+                    <td><input type="text" id="number2" class="np"></td>
+                    <td><input type="text" id="number3" class="np"></td>
+                    <td><input type="button" class="tdata" id="total1" value="total" onclick="math()"></input></td>
+                </tr>
+
+                <tr>
+                    <td class="s">English</td>
+                    <td><input type="text" id="number4" class="np"></td>
+                    <td><input type="text" id="number5" class="np"></td>
+                    <td><input type="text" id="number6" class="np"></td>
+                    <td><input type="button" class="tdata" id="total2" value="total" onclick="eng()"></input></td>
+                </tr>
+
+                <tr>
+                    <td class="s">Biology</td>
+                    <td><input type="text" id="number7" class="np"></td>
+                    <td><input type="text" id="number8" class="np"></td>
+                    <td><input type="text" id="number9" class="np"></td>
+                    <td><input type="button" class="tdata" id="total3" value="total" onclick="bio()"></input></td>
+                </tr>
+
+                <tr>
+                    <td class="s">Chemistry</td>
+                    <td><input type="text" id="number10" class="np"></td>
+                    <td><input type="text" id="number11" class="np"></td>
+                    <td><input type="text" id="number12" class="np"></td>
+                    <td><input type="button" class="tdata" id="total4" value="total" onclick="chem()"></input></td>
+                </tr>
+
+                <tr>
+                    <td class="s">Physics</td>
+                    <td><input type="text" id="number13" class="np"></td>
+                    <td><input type="text" id="number14" class="np"></td>
+                    <td><input type="text" id="number15" class="np"></td>
+                    <td><input type="button" class="tdata" id="total5" value="total" onclick="phy()"></input></td>
+                </tr>
+            </table>
+
+        <div class="results">
+            <div class="inp2"><h1>Total:</h1></div><div class="nt1" id="total"> </div>
+           <div class="inp2"><h1>Average:</h1></div><div class="nt1" id="average"> </div>
+           <div class="inp2"><h1>Grade:</h1></div><div class="nt1" id="grade"> </div>
+           <div class="inp2"><h1>Comment:</h1></div><div class="nt1" id="comment"> </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

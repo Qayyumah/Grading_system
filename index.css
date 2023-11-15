@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+  html{
+	box-sizing: border-box;
+	font-size: 52.5%;
+
+	@media (max-width:425px) {
+		font-size: 0.5%;
+	}
+}
+body{
+	font-weight: 200;
+	color: white;
+	/* background-size: cover; */
+    background-color: black;
+	/* background-repeat: no-repeat; */
+	min-height: 100vh;
+
+}
+.container{
+	max-width: 130rem;
+	margin: 3rem auto;
+	background-color: slategray;
+	box-shadow: black;
+
+	min-height: 70rem;	
+
+	/* @media (max-width:425px){
+		max-width: 250em;
+		background-size: cover;
+	} */
+}
+.side-bar{
+	background-color: white;
+	flex: 0 0 18% ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.side-nav{
+	font-size: 1.4rem;
+	list-style: none;
+	margin-top: 3rem;
+	display: flex;
+
+	/* @media only screen and(max-width:320px) {
+		font-size: .2rem;
+		margin-top: 1rem;
+	} */
+}
+.side-nav_item{
+	display: flex;
+	
+}
+.side-nav_item button{
+	position: relative;
+	width: 100px;
+	height: 60px;
+	border-radius: 15px;
+	margin: 10px 20px;
+	background-color: black;
+	color: lightblue;
+
+	/* @media (min-width:320px) {
+		width: 80px;
+	} */
+}
+.side-nav_item button{
+	font-weight: 600;
+	font-size: 18px;
+
+	/* @media (max-width:320px) {
+		font-size: 5px;
+		font-weight: 200;
+	} */
+}
+.side-nav_item button:hover{
+	background-color: white;
+	color: black;
+}
+/* .side-nav_item:not(:last-child){
+	margin-bottom: .5rem; */
+/* } */
+/* .side-nav_item:hover::before,
+.side-nav_item--active::before{
+	transform: scaleY(1);
+	width: 100%;
+} */
+
+.number{
+	margin: 40px 20px;
+	text-align: center;
+}
+.number label{
+	font-size: 25px;
+	font-weight: 600;
+	margin-right: 25px;
+}
+.inp1 input{
+	font-weight: 600;
+	font-style: 30px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.inp1{
+	margin: 20px 20px;
+}
+
+.name{
+	text-align: center;
+	margin-top: 20px;
+	color: black;
+}
+.name label{
+	font-weight: 600;
+	font-size: 25px;
+}
+#fullname{
+	width: 40%;
+	height: 40px;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 21px;
+	
+}
+.n1{
+	margin-left: 55px;
+}
+.n2{
+	margin-left: 25px;
+}
+.results{
+	margin-top: -300px;
+	margin-right: 250px;
+	text-align: center;
+	display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+}
+
+#total{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: lightskyblue;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+	border-radius: 5px;
+}
+#average{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: lightskyblue;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+	border-radius: 5px;
+}
+#grade{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: lightskyblue;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+	border-radius: 5px;
+}
+#comment{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: lightskyblue;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+	border-radius: 5px;
+}
+.inp2{
+	margin: 20px 5px;
+}
+.nt1{
+	margin: 20px  10px;
+}
+
+.table{
+	margin-top: 10px;
+	margin: auto;
+	text-align: center;
+}
+td input{
+	width: 80px;
+	margin: 5px 10px;
+	height: 30px;
+	border-radius: 3px;
+}
+
+.tdata{
+	width: 55px;
+	background-color: black;
+	color: lightskyblue;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.s{
+	font-weight: 600;
+	font-size: 20px;
+	color: black;
+}
+.top{
+	font-size: 20px;
+	font-weight: 600;
+	color: lightskyblue;
+	margin-bottom: 10px;
+}
+
+.np{
+	font-weight: 600;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media only screen and (max-width:500px) {
+	.container{
+		max-width: 9030rem;
+	}
+	.side-nav_item button{
+		width: 70px;
+		font-size: 14px;
+	}
+	.nt1{
+		width: 200px;
+	}
+	.results{
+		flex-direction: column;
+	}
+	#total{
+		width: 300px;
+		
+	}
+	#average{
+		width: 300px;
+		
+	}
+	#grade{
+		width: 300px;
+		
+	}
+	#comment{
+		width: 300px;
+		
+	}
+}
+
+@media only screen and (max-width:500px){
+	.s{
+		font-size: 40px;
+	}
+	.np{
+		padding: 20px;
+	}
+	.top{
+		font-size: 30px;
+	}
+	.tdata{
+		font-size: 20px;
+		width: 90px;
+	}
+	.container{
+		width: 700px;
+		text-align: center;
+	}
+	body{
+		background-color: none;
+	}
+	.inp2{
+		font-size: 25px;
+	}
+	#total{
+		width: 100%;
+	
+	}	
+	.head{
+		text-align: center;
+
+		
+	}
+}
